@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  padding: 6rem 0 2rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: #5290f5;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.content .english,
+.content .uzbek {
+  width: 45%;
+  position: relative;
+}
+.content .english .head,
+.content .uzbek .head {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  color: blueviolet;
+}
+.content .english .textarea,
+.content .uzbek .textarea {
+  width: 100%;
+  min-height: 250px;
+  margin-top: 1rem;
+  resize: none;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+  font-size: 1.3rem;
+}
+.content .english .textarea .default,
+.content .uzbek .textarea .default {
+  color: rgba(0, 0, 0, 0.6);
+}
+.content .english .useful,
+.content .uzbek .useful {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.content .english .useful i,
+.content .uzbek .useful i {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
+.content .english .useful i:active,
+.content .uzbek .useful i:active {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.content .space-between {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.content .space-between .head {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .space-between .head i {
+  color: rgba(0, 0, 0, 0.6);
+}
+.content .space-between .btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .space-between .btn button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #5290f5;
+  outline: 0;
+  border: 0;
+}
+.content .space-between .btn button:active {
+  box-shadow: 0 0 10px #5290f5;
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    padding: 2rem 0;
+  }
+  .content {
+    width: 90%;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .content .english,
+.content .uzbek {
+    width: 100%;
+  }
+  .content .english .textarea,
+.content .uzbek .textarea {
+    min-height: 150px;
+  }
+  .content .space-between {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .content .space-between .head {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .space-between .head i {
+    transform: rotate(90deg);
+    color: #000000;
+  }
+}/*# sourceMappingURL=style.css.map */
