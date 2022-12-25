@@ -1,5 +1,5 @@
 const textarea = document.querySelector("#word");
-const result = document.querySelector("#result");
+const result = document.querySelector("#result > span");
 const button = document.querySelector("#translate-btn");
 const replaceBtn = document.querySelector(".replace");
 const divLang1 = document.querySelector(".lang1");
